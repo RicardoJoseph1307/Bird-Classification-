@@ -1,0 +1,23 @@
+<!-- seleccionUsuario.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Usuario</title>
+</head>
+<body>
+    <div>
+        <h1>Seleccione su tipo de usuario:</h1>
+        <button onclick="redirigir('niño')">Niño</button>
+        <button onclick="redirigir('turista')">Turista</button>
+        <button onclick="redirigir('biologo')">Biólogo</button>
+    </div>
+
+    <script>
+        function redirigir(tipoUsuario) {
+            window.location.href = 'ModeloFuncionalVGG19.html?tipoUsuario=' + tipoUsuario;
+        }
+    </script>
+</body>
+</html>
